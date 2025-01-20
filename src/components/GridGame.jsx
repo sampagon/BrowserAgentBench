@@ -17,6 +17,7 @@ const GridGame = () => {
     return `${row}-${col}`;
   }, []);
 
+  // NEED TO FIX BPS FORMULA WITH ONE FROM GRID TASK PAPER
   const calculateBPS = (ntpmValue) => {
     const bitsPerTarget = Math.log2(GRID_SIZE * GRID_SIZE);
     const absNtpm = Math.abs(ntpmValue);
